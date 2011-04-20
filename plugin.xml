@@ -7,10 +7,6 @@ Domain classes necessary for Appointment Scheduling
 </description>
   <documentation>http://grails.org/plugin/ncs-appointment</documentation>
   <resources>
-    <resource>BuildConfig</resource>
-    <resource>Config</resource>
-    <resource>DataSource</resource>
-    <resource>UrlMappings</resource>
     <resource>edu.umn.ncs.Appointment</resource>
     <resource>edu.umn.ncs.AppointmentDetail</resource>
     <resource>edu.umn.ncs.AppointmentDetailCode</resource>
