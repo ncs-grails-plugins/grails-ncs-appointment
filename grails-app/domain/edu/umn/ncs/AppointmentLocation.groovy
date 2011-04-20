@@ -10,5 +10,8 @@ class AppointmentLocation {
 	String toString() { name }
 
     static constraints = {
+		name()
+		address(nullable:true)
+		phone(nullable:true)
     }
 }
