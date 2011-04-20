@@ -45,7 +45,26 @@ class Appointment {
 	
 	static hasMany = [ incentives: Incentive, details: AppointmentDetail ]
 	
-	
     static constraints = {
+		startTime()
+		endTime(nullable:true)
+		person(nullable:true)
+		dwellingUnit(nullable:true)
+		study()
+		type()
+		result(nullable:true)
+		billable()
+		location(nullable:true)
+		sequenceNumber(nullable:true)
+		followUpAppointment()
+		parentAppointment(nullable:true)
+		scheduledBy(nullable:true)
+		generateLetter()
+		letter(nullable:true)
+		dateCreated()
+		userCreated()
+		appCreated()
+		lastUpdated(nullable:true)
+		userUpdated(nullable:true)
     }
 }
