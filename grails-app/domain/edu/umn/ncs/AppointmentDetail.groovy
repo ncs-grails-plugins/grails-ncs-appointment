@@ -7,6 +7,8 @@ class AppointmentDetail {
 	String detailText
 	String comments
 
+	static belongsTo = [ appointment: Appointment ]
+
     static constraints = {
 		type()
 		detailCode(nullable:true)

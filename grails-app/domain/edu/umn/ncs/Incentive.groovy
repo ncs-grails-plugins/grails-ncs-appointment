@@ -16,5 +16,13 @@ class Incentive {
 	static belongsTo = [ appointment : Appointment ]
 	
     static constraints = {
+		type()
+		amount(nullable:true)
+		accepted()
+		paymentStarted(nullable:true)
+		checkGenerated(nullable:true)
+		checkNumber(nullable:true)
+		pva(nullable:true)
+		comments(nullable:true)
     }
 }
