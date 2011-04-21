@@ -12,6 +12,14 @@ class Incentive {
 	String pva
 	
 	String comments
+
+	String toString() {
+		if (amount) {
+			"\$${amount} ${type}"
+		} else {
+			type
+		}
+	}
 	
 	static belongsTo = [ appointment : Appointment ]
 	
