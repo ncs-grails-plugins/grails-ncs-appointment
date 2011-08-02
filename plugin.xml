@@ -1,4 +1,4 @@
-<plugin name='ncs-appointment' version='0.1' grailsVersion='1.3.5 &gt; *'>
+<plugin name='ncs-appointment' version='0.2' grailsVersion='1.3.5 &gt; *'>
   <author>Aaron J. Zirbes</author>
   <authorEmail>ajz@umn.edu</authorEmail>
   <title>Appointment SchedulingDomain Classes Domain Classes</title>
@@ -11,12 +11,11 @@ Domain classes necessary for Appointment Scheduling
     <resource>edu.umn.ncs.AppointmentDetail</resource>
     <resource>edu.umn.ncs.AppointmentDetailCode</resource>
     <resource>edu.umn.ncs.AppointmentDetailType</resource>
+    <resource>edu.umn.ncs.AppointmentIncentive</resource>
     <resource>edu.umn.ncs.AppointmentLocation</resource>
     <resource>edu.umn.ncs.AppointmentResult</resource>
     <resource>edu.umn.ncs.AppointmentResultCategory</resource>
     <resource>edu.umn.ncs.AppointmentType</resource>
-    <resource>edu.umn.ncs.Incentive</resource>
-    <resource>edu.umn.ncs.IncentiveType</resource>
   </resources>
   <dependencies>
     <plugin name='ncsTracking' version='0.3 &gt; *' />

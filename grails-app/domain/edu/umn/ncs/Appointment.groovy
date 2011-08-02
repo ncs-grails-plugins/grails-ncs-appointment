@@ -43,7 +43,7 @@ class Appointment {
 		"${type} appointment on ${startTime}"
 	}
 	
-	static hasMany = [ incentives: Incentive, details: AppointmentDetail ]
+	static hasMany = [ incentives: AppointmentIncentive, details: AppointmentDetail ]
 	
     static constraints = {
 		startTime()
