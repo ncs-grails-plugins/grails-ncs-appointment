@@ -1,9 +1,11 @@
 package edu.umn.ncs
 
 class AppointmentIncentive {
-
-	static belongsTo = [ appointment: Appointment, incentive: Incentive ]
+	Incentive incentive
+	
+	static belongsTo = [ appointment: Appointment  ]
 
     static constraints = {
+    	incentive()
     }
 }
