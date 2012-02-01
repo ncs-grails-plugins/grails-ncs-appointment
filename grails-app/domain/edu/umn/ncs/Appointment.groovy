@@ -2,36 +2,40 @@ package edu.umn.ncs
 
 class Appointment {
 	
-	// When is the appointment
+	/** When does the appointment start */
 	Date startTime
+	/** When does the appointment end */
 	Date endTime
-	// Who is the appointment with?
+	/** Who is the appointment with? */
 	Person person
+	/** With what  is the appointment with? */
 	DwellingUnit dwellingUnit
-	// What study/project is the appointment for
+	/** What study/project is the appointment for */
 	Study study
-	// What kind of appointment was this?
+	/** What kind of appointment was this? */
 	AppointmentType type
-	// What was the result of the appointment
+	/** What was the result of the appointment */
 	AppointmentResult result
-	// Can the costs be billed to outside parties?
+	/** Can the costs be billed to outside parties? */
 	Boolean billable
-	// Where is the appointment?
+	/** Where is the appointment? */
 	AppointmentLocation location
-	// Is this part of a sequence?
+	/** Is this part of a sequence? */
 	Integer sequenceNumber
-	// Is this a follow-up appointment
+	/** Is this a follow-up appointment */
 	Boolean followUpAppointment
-	// This is handy for re-schedules and follow-ups
+	/** This is handy for re-schedules and follow-ups */
 	Appointment parentAppointment
-	// Who scheduled this appointment
+	/** Who scheduled this appointment */
 	String scheduledBy
-	// Generate a Letter?
+	/** Generate a Letter? */
 	Boolean generateLetter = false
-	// If a letter needs to be generated, save it here.
+	/** If a letter needs to be generated, save it here. */
 	TrackedItem letter
 	
 	// Provenance Information
+
+	/** Date the record was created */
 	Date dateCreated = new Date()
 	String userCreated
 	String appCreated = 'ncs-appointment'
