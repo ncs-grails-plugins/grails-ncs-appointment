@@ -1,0 +1,5 @@
+dependencies.groovy
+target/
+web-app/
+plugin.xml
+grails-ncs-appointment-*.zip
